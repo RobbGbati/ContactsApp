@@ -25,8 +25,8 @@ public class ContactsApplication  implements CommandLineRunner{
 		// TODO Auto-generated method stub
 		DateFormat df= new SimpleDateFormat("dd/MM/yyyy");
 		contactRepository.save(new Contact("Afi","Pepeli",df.parse("01/07/2019"), "afi@test.com", 16812815,"afi.jpeg"));
-		contactRepository.save(new Contact("Jasmine","Laura",df.parse("27/07/2019"), "laura@test.com", 10681305,"laura.jpeg"));
-		contactRepository.save(new Contact("Basile","Epouh",df.parse("01/01/2019"), "basile@test.com", 8130565,"basile.jpeg"));
+		contactRepository.save(new Contact("Jas","Lau",df.parse("17/07/2019"), "laura@test.com", 10681305,"lau.jpeg"));
+		contactRepository.save(new Contact("Basile","Epouh",df.parse("01/01/2019"), "basile@test.com", 8130565,"ile.jpeg"));
 		contactRepository.findAll().forEach(c->{
 			System.out.println(c.getNom());
 		});
